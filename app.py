@@ -6,7 +6,7 @@ from openai import OpenAI
 import io
 
 # OpenAI 클라이언트 설정 (실제 API 키로 교체하세요)
-client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # 데이터 저장을 위한 CSV 파일 경로
 DATA_FILE = "student_responses.csv"
